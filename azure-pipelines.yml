@@ -24,3 +24,6 @@ steps:
     targetPath: '$(Pipeline.Workspace)'
     publishLocation: 'pipeline'
   displayName: 'npm install and build'
+
+- task: PublishBuildArtifacts@1
+
