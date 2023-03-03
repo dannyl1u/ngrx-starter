@@ -21,7 +21,7 @@ steps:
     ng build
 - task: PublishPipelineArtifact@1
   inputs:
-    targetPath: '$(Pipeline.Workspace)'
+    targetPath: 'dist/person-counter-web'
     publishLocation: 'pipeline'
   displayName: 'npm install and build'
 
